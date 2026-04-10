@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Primary meta (overridden per-page by useSeo composable) -->
+    <title>LandLord · Rent Transactions</title>
+    <meta name="description"
+          content="LandLord helps tenants track rent payments, build a rental credit score, and visualise month-by-month coverage — all in one modern dashboard." />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="author" content="LandLord" />
+    <meta name="theme-color" content="#031a60" />
+    <meta name="color-scheme" content="light" />
+
+    <!-- ── PWA ──────────────────────────────────────────────────── -->
+    <!-- Manifest injected by vite-plugin-pwa -->
+
+    <!-- iOS PWA -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="LandLord" />
+
+    <!-- iOS splash screens (portrait, most common devices) -->
+    <!-- iPhone 16 Pro Max -->
+    <link rel="apple-touch-startup-image"
+          href="/splash.svg"
+          media="(device-width: 440px) and (device-height: 956px) and (-webkit-device-pixel-ratio: 3)"/>
+    <!-- iPhone 16 / 15 Pro -->
+    <link rel="apple-touch-startup-image"
+          href="/splash.svg"
+          media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3)"/>
+    <!-- iPhone 14 Plus / 13 Pro Max -->
+    <link rel="apple-touch-startup-image"
+          href="/splash.svg"
+          media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3)"/>
+    <!-- iPhone SE / 13 mini -->
+    <link rel="apple-touch-startup-image"
+          href="/splash.svg"
+          media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"/>
+    <!-- iPad Pro 12.9" -->
+    <link rel="apple-touch-startup-image"
+          href="/splash.svg"
+          media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"/>
+    <!-- iPad 10th gen -->
+    <link rel="apple-touch-startup-image"
+          href="/splash.svg"
+          media="(device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2)"/>
+
+    <!-- Favicons & touch icons -->
+    <link rel="icon"             href="/favicon.png"  type="image/png" />
+    <link rel="apple-touch-icon" href="/icon.png"     sizes="180x180" />
+    <link rel="apple-touch-icon" href="/pwa-192.svg"  sizes="192x192" />
+
+    <!-- Canonical (fallback — pages set their own) -->
+    <link rel="canonical" href="https://landlord.aimelive.com/" />
+
+    <!-- Open Graph (fallback) -->
+    <meta property="og:type"         content="website" />
+    <meta property="og:url"          content="https://landlord.aimelive.com/" />
+    <meta property="og:site_name"    content="LandLord" />
+    <meta property="og:title"        content="LandLord | Rent Transactions" />
+    <meta property="og:description"  content="Track rent payments, build your rental credit score, and visualise month-by-month coverage." />
+    <meta property="og:image"        content="https://landlord.aimelive.com/og-image.svg" />
+    <meta property="og:image:width"  content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt"    content="LandLord — Smart Rent Tracking Dashboard" />
+    <meta property="og:locale"       content="en_US" />
+
+    <!-- Twitter Card (fallback) -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="LandLord | Rent Transactions" />
+    <meta name="twitter:description" content="Track rent payments, build your rental credit score, and visualise month-by-month coverage." />
+    <meta name="twitter:image"       content="https://landlord.aimelive.com/og-image.svg" />
+    <meta name="twitter:image:alt"   content="LandLord — Smart Rent Tracking Dashboard" />
+
+    <!-- Structured Data: Organisation + WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "LandLord",
+          "url": "https://landlord.aimelive.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://landlord.aimelive.com/logo.png"
+          },
+          "description": "Smart rent tracking and rental credit scoring platform for tenants."
+        },
+        {
+          "@type": "WebSite",
+          "name": "LandLord",
+          "url": "https://landlord.aimelive.com",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://landlord.aimelive.com/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

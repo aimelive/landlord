@@ -1,0 +1,194 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#04091e"/>
+      <stop offset="60%" stop-color="#031a60"/>
+      <stop offset="100%" stop-color="#0d2b80"/>
+    </linearGradient>
+    <radialGradient id="orb1" cx="80%" cy="15%" r="50%">
+      <stop offset="0%" stop-color="#299f4d" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#299f4d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="15%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="#5b8af5" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#5b8af5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb3" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#031a60" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.3"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#orb1)"/>
+  <rect width="1200" height="630" fill="url(#orb2)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="210" x2="660" y2="210" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="0" y1="420" x2="660" y2="420" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="220" y1="0" x2="220" y2="630" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="440" y1="0" x2="440" y2="630" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <line x1="660" y1="0" x2="660" y2="630" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Left content -->
+  <!-- Green accent bar -->
+  <rect x="80" y="200" width="5" height="110" rx="2.5" fill="#299f4d"/>
+
+  <!-- Brand label -->
+  <text x="104" y="232" font-family="system-ui,-apple-system,BlinkMacSystemFont,sans-serif"
+        font-size="13" font-weight="600" letter-spacing="4" fill="rgba(255,255,255,0.4)"
+        text-transform="uppercase">LANDLORD</text>
+
+  <!-- Main headline -->
+  <text x="104" y="295" font-family="system-ui,-apple-system,BlinkMacSystemFont,sans-serif"
+        font-size="58" font-weight="800" fill="white" letter-spacing="-2">Smart Rent</text>
+  <text x="104" y="358" font-family="system-ui,-apple-system,BlinkMacSystemFont,sans-serif"
+        font-size="58" font-weight="800" fill="white" letter-spacing="-2">Tracking.</text>
+
+  <!-- Subline -->
+  <text x="104" y="400" font-family="system-ui,-apple-system,BlinkMacSystemFont,sans-serif"
+        font-size="22" fill="rgba(255,255,255,0.55)">Build your rental credit score.</text>
+  <text x="104" y="428" font-family="system-ui,-apple-system,BlinkMacSystemFont,sans-serif"
+        font-size="22" fill="rgba(255,255,255,0.55)">Never miss a covered month.</text>
+
+  <!-- Feature chips -->
+  <rect x="104" y="466" width="168" height="34" rx="17" fill="rgba(41,159,77,0.18)" stroke="rgba(41,159,77,0.45)" stroke-width="1"/>
+  <text x="188" y="488" font-family="system-ui,-apple-system,sans-serif" font-size="13"
+        font-weight="600" fill="#4fd87c" text-anchor="middle">✓ Payment Tracking</text>
+
+  <rect x="284" y="466" width="148" height="34" rx="17" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="358" y="488" font-family="system-ui,-apple-system,sans-serif" font-size="13"
+        font-weight="600" fill="rgba(255,255,255,0.65)" text-anchor="middle">Credit Score</text>
+
+  <rect x="444" y="466" width="176" height="34" rx="17" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="532" y="488" font-family="system-ui,-apple-system,sans-serif" font-size="13"
+        font-weight="600" fill="rgba(255,255,255,0.65)" text-anchor="middle">Coverage Timeline</text>
+
+  <!-- URL -->
+  <text x="104" y="574" font-family="system-ui,-apple-system,sans-serif" font-size="16"
+        fill="rgba(255,255,255,0.25)">landlord.aimelive.com</text>
+
+  <!-- Vertical separator -->
+  <line x1="680" y1="60" x2="680" y2="570" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Right: Dashboard mockup card -->
+  <rect x="710" y="60" width="430" height="510" rx="16"
+        fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <!-- Topbar mock -->
+  <rect x="710" y="60" width="430" height="44" rx="16" fill="rgba(255,255,255,0.07)"/>
+  <rect x="710" y="88" width="430" height="16" fill="rgba(255,255,255,0.07)"/>
+  <circle cx="738" cy="82" r="6" fill="#299f4d"/>
+  <text x="752" y="86" font-family="system-ui,-apple-system,sans-serif" font-size="11"
+        fill="rgba(255,255,255,0.55)">Dashboard · Jean Mugisha</text>
+  <!-- Avatar -->
+  <circle cx="1118" cy="82" r="14" fill="rgba(41,159,77,0.8)"/>
+  <text x="1118" y="87" font-family="system-ui,-apple-system,sans-serif" font-size="10"
+        font-weight="700" fill="white" text-anchor="middle">JM</text>
+
+  <!-- Summary cards row -->
+  <!-- Card 1 - navy -->
+  <rect x="724" y="118" width="190" height="68" rx="10" fill="rgba(3,26,96,0.7)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="740" y="138" font-family="system-ui,-apple-system,sans-serif" font-size="9"
+        fill="rgba(255,255,255,0.4)" letter-spacing="1">TOTAL PAID</text>
+  <text x="740" y="162" font-family="system-ui,-apple-system,sans-serif" font-size="17"
+        font-weight="700" fill="white">3,800,000 Rwf</text>
+  <text x="740" y="178" font-family="system-ui,-apple-system,sans-serif" font-size="9"
+        fill="rgba(255,255,255,0.3)">5 payments</text>
+  <rect x="882" y="124" width="50" height="18" rx="9" fill="rgba(41,159,77,0.2)"/>
+  <text x="907" y="137" font-family="system-ui,-apple-system,sans-serif" font-size="9"
+        fill="#4fd87c" text-anchor="middle">+12%</text>
+
+  <!-- Card 2 -->
+  <rect x="924" y="118" width="102" height="68" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="940" y="138" font-family="system-ui,-apple-system,sans-serif" font-size="9"
+        fill="rgba(255,255,255,0.4)" letter-spacing="1">MONTHS</text>
+  <text x="940" y="164" font-family="system-ui,-apple-system,sans-serif" font-size="24"
+        font-weight="700" fill="#299f4d">18</text>
+
+  <!-- Card 3 -->
+  <rect x="1036" y="118" width="104" height="68" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="1052" y="138" font-family="system-ui,-apple-system,sans-serif" font-size="9"
+        fill="rgba(255,255,255,0.4)" letter-spacing="1">LAST COVERED</text>
+  <text x="1052" y="158" font-family="system-ui,-apple-system,sans-serif" font-size="12"
+        font-weight="700" fill="white">Feb 2026</text>
+  <rect x="1052" y="164" width="52" height="14" rx="7" fill="rgba(41,159,77,0.2)"/>
+  <text x="1078" y="175" font-family="system-ui,-apple-system,sans-serif" font-size="9"
+        fill="#4fd87c" text-anchor="middle">Active</text>
+
+  <!-- Divider -->
+  <line x1="724" y1="200" x2="1126" y2="200" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Coverage timeline section -->
+  <text x="724" y="220" font-family="system-ui,-apple-system,sans-serif" font-size="10"
+        font-weight="600" fill="rgba(255,255,255,0.35)" letter-spacing="1">COVERAGE TIMELINE</text>
+
+  <!-- Month grid row 1 -->
+  <rect x="724" y="228" width="88" height="54" rx="8" fill="rgba(41,159,77,0.15)" stroke="rgba(41,159,77,0.35)" stroke-width="1"/>
+  <text x="768" y="248" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="white" text-anchor="middle">Sep 2024</text>
+  <text x="768" y="263" font-family="system-ui,-apple-system,sans-serif" font-size="8" fill="#4fd87c" text-anchor="middle">✓ Covered</text>
+  <text x="768" y="275" font-family="system-ui,-apple-system,sans-serif" font-size="8" fill="rgba(255,255,255,0.35)" text-anchor="middle">800K Rwf</text>
+
+  <rect x="820" y="228" width="88" height="54" rx="8" fill="rgba(41,159,77,0.15)" stroke="rgba(41,159,77,0.35)" stroke-width="1"/>
+  <text x="864" y="248" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="white" text-anchor="middle">Oct 2024</text>
+  <text x="864" y="263" font-family="system-ui,-apple-system,sans-serif" font-size="8" fill="#4fd87c" text-anchor="middle">✓ Covered</text>
+  <text x="864" y="275" font-family="system-ui,-apple-system,sans-serif" font-size="8" fill="rgba(255,255,255,0.35)" text-anchor="middle">800K Rwf</text>
+
+  <rect x="916" y="228" width="88" height="54" rx="8" fill="rgba(41,159,77,0.15)" stroke="rgba(41,159,77,0.35)" stroke-width="1"/>
+  <text x="960" y="248" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="white" text-anchor="middle">Nov 2024</text>
+  <text x="960" y="263" font-family="system-ui,-apple-system,sans-serif" font-size="8" fill="#4fd87c" text-anchor="middle">✓ Covered</text>
+  <text x="960" y="275" font-family="system-ui,-apple-system,sans-serif" font-size="8" fill="rgba(255,255,255,0.35)" text-anchor="middle">800K Rwf</text>
+
+  <rect x="1012" y="228" width="88" height="54" rx="8" fill="rgba(41,159,77,0.15)" stroke="rgba(41,159,77,0.35)" stroke-width="1"/>
+  <text x="1056" y="248" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="white" text-anchor="middle">Dec 2024</text>
+  <text x="1056" y="263" font-family="system-ui,-apple-system,sans-serif" font-size="8" fill="#4fd87c" text-anchor="middle">✓ Covered</text>
+  <text x="1056" y="275" font-family="system-ui,-apple-system,sans-serif" font-size="8" fill="rgba(255,255,255,0.35)" text-anchor="middle">400K Rwf</text>
+
+  <!-- Row 2 -->
+  <rect x="724" y="290" width="88" height="54" rx="8" fill="rgba(41,159,77,0.15)" stroke="rgba(41,159,77,0.35)" stroke-width="1"/>
+  <text x="768" y="310" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="white" text-anchor="middle">Jan 2025</text>
+  <text x="768" y="325" font-family="system-ui,-apple-system,sans-serif" font-size="8" fill="#4fd87c" text-anchor="middle">✓ Covered</text>
+
+  <rect x="820" y="290" width="88" height="54" rx="8" fill="rgba(41,159,77,0.15)" stroke="rgba(41,159,77,0.35)" stroke-width="1"/>
+  <text x="864" y="310" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="white" text-anchor="middle">Feb 2025</text>
+  <text x="864" y="325" font-family="system-ui,-apple-system,sans-serif" font-size="8" fill="#4fd87c" text-anchor="middle">✓ Covered</text>
+
+  <rect x="916" y="290" width="88" height="54" rx="8" fill="rgba(41,159,77,0.15)" stroke="rgba(41,159,77,0.35)" stroke-width="1"/>
+  <text x="960" y="310" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="white" text-anchor="middle">Mar 2025</text>
+  <text x="960" y="325" font-family="system-ui,-apple-system,sans-serif" font-size="8" fill="#4fd87c" text-anchor="middle">✓ Covered</text>
+
+  <rect x="1012" y="290" width="88" height="54" rx="8" fill="rgba(41,159,77,0.12)" stroke="rgba(41,159,77,0.2)" stroke-width="1"/>
+  <text x="1056" y="310" font-family="system-ui,-apple-system,sans-serif" font-size="9" font-weight="600" fill="rgba(255,255,255,0.4)" text-anchor="middle">Apr 2025</text>
+  <text x="1056" y="325" font-family="system-ui,-apple-system,sans-serif" font-size="8" fill="#4fd87c" text-anchor="middle">✓ Covered</text>
+
+  <!-- Divider -->
+  <line x1="724" y1="358" x2="1126" y2="358" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Payment table mock -->
+  <text x="724" y="376" font-family="system-ui,-apple-system,sans-serif" font-size="10"
+        font-weight="600" fill="rgba(255,255,255,0.35)" letter-spacing="1">PAYMENT RECORDS</text>
+
+  <!-- Table header -->
+  <rect x="724" y="382" width="402" height="24" rx="4" fill="rgba(3,26,96,0.6)"/>
+  <text x="736" y="398" font-family="system-ui,-apple-system,sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">PAID ON</text>
+  <text x="826" y="398" font-family="system-ui,-apple-system,sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">AMOUNT</text>
+  <text x="940" y="398" font-family="system-ui,-apple-system,sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">MONTHS COVERED</text>
+
+  <rect x="724" y="406" width="402" height="26" fill="rgba(255,255,255,0.03)"/>
+  <text x="736" y="423" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="rgba(255,255,255,0.6)">28 Aug 2024</text>
+  <text x="826" y="423" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="700" fill="white">800,000 Rwf</text>
+  <rect x="940" y="410" width="54" height="14" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <text x="967" y="421" font-family="system-ui,-apple-system,sans-serif" font-size="8" fill="rgba(255,255,255,0.5)" text-anchor="middle">Sep–Nov</text>
+
+  <rect x="724" y="432" width="402" height="26" fill="rgba(255,255,255,0.01)"/>
+  <text x="736" y="449" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="rgba(255,255,255,0.6)">22 Jan 2026</text>
+  <text x="826" y="449" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="700" fill="white">1,000,000 Rwf</text>
+  <rect x="940" y="436" width="76" height="14" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <text x="978" y="447" font-family="system-ui,-apple-system,sans-serif" font-size="8" fill="rgba(255,255,255,0.5)" text-anchor="middle">Oct–Feb 26</text>
+
+  <!-- Credit score badge -->
+  <rect x="840" y="482" width="170" height="50" rx="25" fill="rgba(41,159,77,0.15)" stroke="rgba(41,159,77,0.35)" stroke-width="1"/>
+  <text x="925" y="503" font-family="system-ui,-apple-system,sans-serif" font-size="18" font-weight="800" fill="white" text-anchor="middle">88</text>
+  <text x="925" y="520" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#4fd87c" text-anchor="middle">Excellent Credit Score</text>
+</svg>
