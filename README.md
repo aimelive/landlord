@@ -173,7 +173,7 @@ The app is fully installable as a Progressive Web App:
 | Muted | `#a8adc1` | Secondary text, placeholders |
 | Navy Dark | `#1a2847` | Label text |
 
-Font: **Inter** — weights 400 · 500 · 600 · 700 · 800
+Font: **Outfit** — weights 400 · 500 · 600 · 700 · 800
 
 ---
 
