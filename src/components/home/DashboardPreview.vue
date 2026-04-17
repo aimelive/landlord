@@ -1,11 +1,7 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <section
-    class="relative pb-16 overflow-visible"
-    style="background: #f7f8fc"
-  >
+  <section class="relative pb-16 overflow-visible" style="background: #f7f8fc">
     <div
       class="relative max-w-5xl mx-auto px-4"
       v-motion
@@ -171,9 +167,7 @@
                   <span class="text-xs font-semibold" style="color: #031a60"
                     >Recent Payments</span
                   >
-                  <span class="text-xs" style="color: #a8adc1"
-                    >This month</span
-                  >
+                  <span class="text-xs" style="color: #a8adc1">This month</span>
                 </div>
                 <div
                   class="divide-y"
@@ -235,10 +229,7 @@
                       </div>
                     </div>
                     <div class="text-right shrink-0">
-                      <div
-                        class="text-xs font-semibold"
-                        style="color: #031a60"
-                      >
+                      <div class="text-xs font-semibold" style="color: #031a60">
                         {{ row.amt }} <span style="color: #a8adc1">Rwf</span>
                       </div>
                       <div class="text-xs" style="color: #a8adc1">
@@ -264,16 +255,13 @@
                 <!-- Coverage bar -->
                 <div
                   class="rounded-xl border p-4"
-                  style="
-                    background: white;
-                    border-color: rgba(3, 26, 96, 0.08);
-                  "
+                  style="background: white; border-color: rgba(3, 26, 96, 0.08)"
                 >
                   <div
                     class="text-xs font-semibold mb-3"
                     style="color: #031a60"
                   >
-                    Coverage — J. Mugisha
+                    Coverage - J. Mugisha
                   </div>
                   <div class="flex gap-1 mb-2">
                     <div
@@ -334,10 +322,7 @@
                 <!-- Mini credit score -->
                 <div
                   class="rounded-xl border p-4 flex items-center gap-4"
-                  style="
-                    background: white;
-                    border-color: rgba(3, 26, 96, 0.08);
-                  "
+                  style="background: white; border-color: rgba(3, 26, 96, 0.08)"
                 >
                   <div class="relative shrink-0">
                     <svg width="56" height="56" viewBox="0 0 56 56">

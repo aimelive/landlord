@@ -42,8 +42,8 @@ import { Star, AlertTriangle } from "lucide-vue-next";
               Every on-time payment builds a tenant's credit score. Late or
               missed payments lower it. This score is
               <strong style="color: #031a60">permanent and portable</strong> —
-              it follows the tenant across every property and every landlord
-              in the system.
+              it follows the tenant across every property and every landlord in
+              the system.
             </p>
             <p class="text-sm leading-relaxed mb-6" style="color: #6b7294">
               For <strong style="color: #031a60">landlords</strong>: verify a
@@ -52,8 +52,8 @@ import { Star, AlertTriangle } from "lucide-vue-next";
             </p>
             <p class="text-sm leading-relaxed" style="color: #6b7294">
               For <strong style="color: #031a60">tenants</strong>: your good
-              payment history becomes an asset. A high score means better
-              trust, faster approvals, and a reputation that opens doors.
+              payment history becomes an asset. A high score means better trust,
+              faster approvals, and a reputation that opens doors.
             </p>
 
             <div
@@ -62,8 +62,8 @@ import { Star, AlertTriangle } from "lucide-vue-next";
             >
               <AlertTriangle :size="13" style="color: #f59e0b" />
               <p class="text-xs font-medium" style="color: #6b7294">
-                Tenants can't escape debts by moving — their score follows
-                them to every landlord.
+                Tenants can't escape debts by moving - their score follows them
+                to every landlord.
               </p>
             </div>
           </div>
@@ -99,9 +99,7 @@ import { Star, AlertTriangle } from "lucide-vue-next";
                     stroke-dashoffset="47"
                     stroke-linecap="round"
                     transform="rotate(-90 80 80)"
-                    style="
-                      filter: drop-shadow(0 0 8px rgba(41, 159, 77, 0.4));
-                    "
+                    style="filter: drop-shadow(0 0 8px rgba(41, 159, 77, 0.4))"
                   />
                 </svg>
                 <div

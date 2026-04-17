@@ -1,31 +1,49 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { RouterView } from 'vue-router'
-import { useSeo } from '../../composables/useSeo'
-import DashboardTopbar from '../../components/dashboard/layout/DashboardTopbar.vue'
-import DashboardSidebar from '../../components/dashboard/layout/DashboardSidebar.vue'
+import { computed, ref, watch } from "vue";
+import { RouterView } from "vue-router";
+import { useSeo } from "../../composables/useSeo";
+import { useAuthStore } from "../../stores/auth.store";
+import DashboardTopbar from "../../components/dashboard/layout/DashboardTopbar.vue";
+import DashboardSidebar from "../../components/dashboard/layout/DashboardSidebar.vue";
 
-// Dashboard is private — keep all sub-pages out of search index
+const auth = useAuthStore();
+
+const portalName = computed(() =>
+  auth.activeRole === "landlord" ? "Landlord" : "Tenant",
+);
+
+// Dashboard is private — private pages stay out of search index.
 useSeo({
-  title: 'Tenant Dashboard',
-  description: 'Your private LandLord tenant dashboard — payment history, coverage timeline, and rental credit score.',
-  canonical: 'https://landlord.aimelive.com/dashboard',
+  title: `${portalName.value} Dashboard`,
+  description: `Your private LandLord ${portalName.value.toLowerCase()} dashboard - payment history, coverage timeline, and rental activity.`,
+  canonical: "https://landlord.aimelive.com/dashboard",
   noindex: true,
-})
+});
 
-const sidebarOpen = ref(false)
+// useSeo runs once at setup; keep the browser-tab title fresh when the user
+// switches role via the sidebar (the layout instance is reused across
+// /dashboard/landlord and /dashboard/tenant).
+watch(portalName, (name) => {
+  document.title = `${name} Dashboard | LandLord`;
+});
+
+const sidebarOpen = ref(false);
 </script>
 
 <template>
-  <div class="min-h-screen font-sans" style="background:#f0f2f6">
+  <div class="min-h-screen font-sans" style="background: #f0f2f6">
     <DashboardTopbar
       :sidebar-open="sidebarOpen"
       @toggle-sidebar="sidebarOpen = !sidebarOpen"
     />
     <DashboardSidebar :open="sidebarOpen" @close="sidebarOpen = false" />
 
-    <div class="pt-16 lg:pl-24 min-h-screen">
-      <RouterView />
+    <!-- Reserve the sidebar's width on lg+, then centre content in a standard
+         container. Pages just render their content; no page-level wrappers. -->
+    <div class="pt-16 lg:pl-64 min-h-screen">
+      <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <RouterView />
+      </main>
     </div>
   </div>
 </template>

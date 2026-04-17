@@ -3,7 +3,7 @@ import { X, CheckCircle2 } from "lucide-vue-next";
 
 const oldWay = [
   "Handwritten notebooks & paper receipts",
-  '"Did I pay March?" — constant confusion',
+  '"Did I pay March?" - constant confusion',
   "Chasing tenants for overdue rent",
   "No way to verify a new tenant's history",
   "Verbal agreements, no paper trail",

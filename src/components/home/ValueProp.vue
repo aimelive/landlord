@@ -3,7 +3,7 @@ import { Building2, Users, CheckCircle2 } from "lucide-vue-next";
 
 const landlordBenefits = [
   "See all tenants and properties in one dashboard",
-  "Automated payment reminders — stop chasing rent",
+  "Automated payment reminders - stop chasing rent",
   "Track debts and collect overdue payments easily",
   "Check a tenant's credit score before renting",
   "Send notifications and announcements instantly",

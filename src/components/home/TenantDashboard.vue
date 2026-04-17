@@ -1,11 +1,7 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <section
-    class="relative py-16 overflow-visible"
-    style="background: #f7f8fc"
-  >
+  <section class="relative py-16 overflow-visible" style="background: #f7f8fc">
     <div
       class="relative max-w-5xl mx-auto px-4"
       v-motion
@@ -29,7 +25,7 @@
         </p>
       </div>
 
-      <!-- Tenant dashboard shell — flipped perspective -->
+      <!-- Tenant dashboard shell - flipped perspective -->
       <div
         class="perspective-mockup-flip rounded-2xl overflow-hidden shadow-2xl border"
         style="

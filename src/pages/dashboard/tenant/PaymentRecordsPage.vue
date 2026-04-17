@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { FileText, CheckCircle2, RefreshCw } from 'lucide-vue-next'
-import { rentLedger } from '../../data/rentTransactions'
+import { rentLedger } from '../../../data/rentTransactions'
 import {
   uniqueCoveredMonths,
   lastCoveredMonth,
   coverageStatusMessage,
-} from '../../lib/ledger'
+} from '../../../lib/ledger'
 
-import PaymentsTable from '../../components/dashboard/PaymentsTable.vue'
-import PaymentDetail from '../../components/dashboard/PaymentDetail.vue'
-import YearFilter from '../../components/dashboard/YearFilter.vue'
-import SummaryCards from '../../components/dashboard/SummaryCards.vue'
+import PaymentsTable from '../../../components/dashboard/tenant/PaymentsTable.vue'
+import PaymentDetail from '../../../components/dashboard/tenant/PaymentDetail.vue'
+import YearFilter from '../../../components/dashboard/tenant/YearFilter.vue'
+import SummaryCards from '../../../components/dashboard/tenant/SummaryCards.vue'
 
 type Payment = (typeof rentLedger.payments)[number]
 
@@ -37,7 +37,7 @@ const selectedPayment = ref<Payment | null>(null)
 </script>
 
 <template>
-  <main class="max-w-6xl mx-auto px-4 py-8 pb-12">
+  <div>
 
     <!-- Page header -->
     <div class="flex items-start gap-4 mb-8">
@@ -87,7 +87,7 @@ const selectedPayment = ref<Payment | null>(null)
       <p class="text-xs mt-1" style="color:#a8adc1">Try selecting a different year or "All"</p>
     </div>
 
-  </main>
+  </div>
 
   <!-- Payment Detail Drawer -->
   <PaymentDetail v-if="selectedPayment" :payment="selectedPayment"

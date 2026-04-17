@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { X, ArrowRight, CalendarDays, Banknote } from 'lucide-vue-next'
-import { rentLedger } from '../../data/rentTransactions'
-import { formatMoney, formatDate } from '../../lib/ledger'
+import { rentLedger } from '../../../data/rentTransactions'
+import { formatMoney, formatDate } from '../../../lib/ledger'
 
 type Payment = (typeof rentLedger.payments)[number]
 

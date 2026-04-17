@@ -23,11 +23,11 @@
 
 ## The Idea
 
-Renting a home is one of the most significant financial commitments a person makes — yet it leaves almost no trace. Unlike a mortgage or a car loan, years of consistent, on-time rent payments are largely invisible to the financial system. Tenants build no verifiable track record, and landlords have no reliable way to assess a prospective tenant beyond a gut feeling or an informal reference.
+Renting a home is one of the most significant financial commitments a person makes - yet it leaves almost no trace. Unlike a mortgage or a car loan, years of consistent, on-time rent payments are largely invisible to the financial system. Tenants build no verifiable track record, and landlords have no reliable way to assess a prospective tenant beyond a gut feeling or an informal reference.
 
 **LandLord** was built to change that.
 
-At its core, LandLord is a rent transaction dashboard — a place where every payment a tenant makes is logged, visualised, and turned into a portable rental history. Month by month, payment by payment, the platform builds a **rental credit score** that tenants own and can share. For landlords, it offers a clear, structured view of which tenants are covered, which months have been paid, and when the next payment is due.
+At its core, LandLord is a rent transaction dashboard - a place where every payment a tenant makes is logged, visualised, and turned into a portable rental history. Month by month, payment by payment, the platform builds a **rental credit score** that tenants own and can share. For landlords, it offers a clear, structured view of which tenants are covered, which months have been paid, and when the next payment is due.
 
 The idea is simple: make rent payments as legible and meaningful as any other financial transaction.
 
@@ -35,13 +35,13 @@ The idea is simple: make rent payments as legible and meaningful as any other fi
 
 ## The Problem It Solves
 
-| Pain Point | Without LandLord | With LandLord |
-|---|---|---|
-| **Proof of payment** | WhatsApp screenshots, paper receipts | Structured digital ledger with coverage timeline |
-| **Rental credit history** | Non-existent | Month-by-month score that grows with every payment |
-| **Coverage clarity** | "Did I pay December?" | Visual month grid — green = covered, instant answer |
-| **Landlord trust** | Informal references | Shareable, verifiable payment record |
-| **Rent chasing** | Manual calls and messages | Automated reminders, real-time dashboard |
+| Pain Point                | Without LandLord                     | With LandLord                                       |
+| ------------------------- | ------------------------------------ | --------------------------------------------------- |
+| **Proof of payment**      | WhatsApp screenshots, paper receipts | Structured digital ledger with coverage timeline    |
+| **Rental credit history** | Non-existent                         | Month-by-month score that grows with every payment  |
+| **Coverage clarity**      | "Did I pay December?"                | Visual month grid - green = covered, instant answer |
+| **Landlord trust**        | Informal references                  | Shareable, verifiable payment record                |
+| **Rent chasing**          | Manual calls and messages            | Automated reminders, real-time dashboard            |
 
 ---
 
@@ -49,11 +49,11 @@ The idea is simple: make rent payments as legible and meaningful as any other fi
 
 ### For Tenants
 
-- **Coverage Timeline** — A visual month grid showing every paid and unpaid month at a glance. Click any month to see the payment that covers it, the amount, date, and notes.
-- **Payment Records** — A full ledger of every transaction: when it was paid, how much, what months it covered, and any notes from the landlord.
-- **Rental Credit Score** — A live credit score (currently 88 · Excellent) derived from payment consistency and coverage completeness.
-- **Payment Detail Drawer** — A slide-in panel revealing full payment details without leaving the page.
-- **Year Filter** — Instantly narrow the timeline or table to any year.
+- **Coverage Timeline** - A visual month grid showing every paid and unpaid month at a glance. Click any month to see the payment that covers it, the amount, date, and notes.
+- **Payment Records** - A full ledger of every transaction: when it was paid, how much, what months it covered, and any notes from the landlord.
+- **Rental Credit Score** - A live credit score (currently 88 · Excellent) derived from payment consistency and coverage completeness.
+- **Payment Detail Drawer** - A slide-in panel revealing full payment details without leaving the page.
+- **Year Filter** - Instantly narrow the timeline or table to any year.
 
 ### For Landlords
 
@@ -66,18 +66,18 @@ The idea is simple: make rent payments as legible and meaningful as any other fi
 
 ### Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Framework | Vue 3 — Composition API, `<script setup lang="ts">` |
-| Language | TypeScript 5.3 — strict mode, no unused variables |
-| Styling | Tailwind CSS v4 (via `@tailwindcss/vite`) + custom CSS |
-| Routing | Vue Router 4 — nested routes, scroll behaviour, catch-all redirects |
-| Icons | Lucide Vue Next |
-| Animation | `@vueuse/motion` for enter transitions |
-| Phone | `libphonenumber-js` — 240+ countries, format validation |
-| SEO | Custom `useSeo.ts` composable — zero dependencies, direct DOM |
-| PWA | `vite-plugin-pwa` v1 + Workbox service worker |
-| Build | Vite 5 |
+| Layer     | Technology                                                          |
+| --------- | ------------------------------------------------------------------- |
+| Framework | Vue 3 - Composition API, `<script setup lang="ts">`                 |
+| Language  | TypeScript 5.3 - strict mode, no unused variables                   |
+| Styling   | Tailwind CSS v4 (via `@tailwindcss/vite`) + custom CSS              |
+| Routing   | Vue Router 4 - nested routes, scroll behaviour, catch-all redirects |
+| Icons     | Lucide Vue Next                                                     |
+| Animation | `@vueuse/motion` for enter transitions                              |
+| Phone     | `libphonenumber-js` - 240+ countries, format validation             |
+| SEO       | Custom `useSeo.ts` composable - zero dependencies, direct DOM       |
+| PWA       | `vite-plugin-pwa` v1 + Workbox service worker                       |
+| Build     | Vite 5                                                              |
 
 ### Project Structure
 
@@ -129,7 +129,7 @@ src/
 └── main.ts
 ```
 
-### Routing — Nested Layout Pattern
+### Routing - Nested Layout Pattern
 
 The dashboard uses Vue Router's nested route pattern. `DashboardLayout.vue` is the parent route component; it renders the topbar and sidebar once and uses `<RouterView />` for child page content. This eliminates duplication across dashboard pages and ensures the sidebar state (`sidebarOpen`) is owned at the layout level.
 
@@ -147,8 +147,8 @@ LandLord is a client-side-rendered Vue SPA. To serve crawlers correctly:
 
 - **Static fallbacks** in `index.html` are read by bots parsing raw HTML
 - **Dynamic `useSeo.ts`** composable updates the DOM on every client-side navigation
-- **Dashboard pages** carry `noindex, nofollow` — they are private and should not be indexed
-- **Auth pages** (`/login`, `/signup`) are indexed — they help with discoverability
+- **Dashboard pages** carry `noindex, nofollow` - they are private and should not be indexed
+- **Auth pages** (`/login`, `/signup`) are indexed - they help with discoverability
 - **JSON-LD** structured data (SoftwareApplication, FAQPage, Organization, WebSite) is injected per-page and cleaned up on unmount
 
 ### PWA
@@ -164,16 +164,16 @@ The app is fully installable as a Progressive Web App:
 
 ## Brand
 
-| Token | Value | Usage |
-|---|---|---|
-| Navy | `#031a60` | Primary — headers, CTA, landlord accent |
-| Green | `#299f4d` | Secondary — tenant accent, success, coverage |
-| Dark Navy | `#04091e` | Deep backgrounds |
-| Silver | `#dce1e9` | Borders, dividers |
-| Muted | `#a8adc1` | Secondary text, placeholders |
-| Navy Dark | `#1a2847` | Label text |
+| Token     | Value     | Usage                                        |
+| --------- | --------- | -------------------------------------------- |
+| Navy      | `#031a60` | Primary - headers, CTA, landlord accent      |
+| Green     | `#299f4d` | Secondary - tenant accent, success, coverage |
+| Dark Navy | `#04091e` | Deep backgrounds                             |
+| Silver    | `#dce1e9` | Borders, dividers                            |
+| Muted     | `#a8adc1` | Secondary text, placeholders                 |
+| Navy Dark | `#1a2847` | Label text                                   |
 
-Font: **Outfit** — weights 400 · 500 · 600 · 700 · 800
+Font: **Outfit** - weights 400 · 500 · 600 · 700 · 800
 
 ---
 
@@ -224,7 +224,7 @@ npm run preview
 
 <div align="center">
   <br/>
-  <img src="public/og-image.svg" alt="LandLord — Smart Rent Tracking Dashboard" width="100%" style="max-width:900px; border-radius:16px;" />
+  <img src="public/og-image.svg" alt="LandLord - Smart Rent Tracking Dashboard" width="100%" style="max-width:900px; border-radius:16px;" />
   <br/><br/>
   <sub>Built with clarity · &copy; 2026 LandLord</sub>
 </div>

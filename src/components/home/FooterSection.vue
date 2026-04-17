@@ -14,7 +14,7 @@ import { Mail, Phone, ExternalLink } from "lucide-vue-next";
           <img src="/logo.png" alt="LandLord" class="h-7 w-auto mb-3" />
           <p class="text-xs leading-relaxed" style="color: #6b7294">
             Rwanda's digital rent management platform. Track payments, send
-            reminders, build tenant credit scores, and manage properties — all
+            reminders, build tenant credit scores, and manage properties - all
             in one place.
           </p>
         </div>
@@ -131,9 +131,7 @@ import { Mail, Phone, ExternalLink } from "lucide-vue-next";
 
       <div class="h-px mb-5" style="background: rgba(3, 26, 96, 0.06)"></div>
 
-      <div
-        class="flex flex-col sm:flex-row items-center justify-between gap-3"
-      >
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
         <p class="text-xs" style="color: #a8adc1">
           &copy; {{ new Date().getFullYear() }} LandLord. All rights reserved.
         </p>

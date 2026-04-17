@@ -84,8 +84,8 @@ const features: {
           A complete rental ecosystem.
         </h2>
         <p class="mt-3 text-sm max-w-lg mx-auto" style="color: #6b7294">
-          Payment tracking, smart reminders, tenant credit scores, and
-          property management — all in one platform.
+          Payment tracking, smart reminders, tenant credit scores, and property
+          management - all in one platform.
         </p>
       </div>
 

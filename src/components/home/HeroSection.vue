@@ -261,9 +261,7 @@ onUnmounted(() => {
                   class="w-1.5 h-1.5 rounded-full pulse-dot"
                   style="background: #299f4d"
                 ></span>
-                <span class="text-[10px]" style="color: #a8adc1"
-                  >Just now</span
-                >
+                <span class="text-[10px]" style="color: #a8adc1">Just now</span>
               </div>
             </div>
           </div>
@@ -346,7 +344,7 @@ onUnmounted(() => {
           style="color: #6b7294"
         >
           A centralized platform where landlords manage properties, track
-          payments, send reminders, and collect debts — while tenants build a
+          payments, send reminders, and collect debts - while tenants build a
           credit score that follows them everywhere. One source of truth.
         </p>
       </div>
