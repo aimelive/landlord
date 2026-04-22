@@ -42,6 +42,34 @@ function normalizeDrfError(
 
   if (data && typeof data === "object" && !Array.isArray(data)) {
     const obj = data as Record<string, unknown>;
+
+    const envelope = obj.error;
+    if (
+      obj.success === false &&
+      envelope &&
+      typeof envelope === "object" &&
+      !Array.isArray(envelope)
+    ) {
+      const env = envelope as Record<string, unknown>;
+      const details = env.details;
+      if (details && typeof details === "object" && !Array.isArray(details)) {
+        const det = details as Record<string, unknown>;
+        const nonField = pickFirst(det.non_field_errors);
+        if (nonField) {
+          return { status, fieldErrors, formError: nonField, raw: data };
+        }
+        for (const [key, val] of Object.entries(det)) {
+          if (key === "non_field_errors") continue;
+          const msg = pickFirst(val);
+          if (msg) fieldErrors[key] = msg;
+        }
+      }
+      const msg = typeof env.message === "string" ? env.message : null;
+      if (msg || Object.keys(fieldErrors).length > 0) {
+        return { status, fieldErrors, formError: msg, raw: data };
+      }
+    }
+
     if (typeof obj.detail === "string") formError = obj.detail;
     if (obj.non_field_errors)
       formError = pickFirst(obj.non_field_errors) || formError;

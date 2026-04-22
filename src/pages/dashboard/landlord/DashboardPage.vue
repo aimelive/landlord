@@ -255,11 +255,11 @@ const greeting = computed(() => {
           </button>
         </header>
 
-        <ul class="divide-y" style="divide-color:#f0f2f7">
+        <ul class="p-3 space-y-2">
           <li
             v-for="p in upcomingSorted"
             :key="p.id"
-            class="flex items-center gap-3 px-5 py-3.5 transition-colors hover:bg-slate-50"
+            class="payment-row flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors cursor-pointer"
           >
             <div
               class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white shrink-0"
@@ -425,3 +425,12 @@ const greeting = computed(() => {
     </section>
   </div>
 </template>
+
+<style scoped>
+.payment-row {
+  background: #fafbff;
+}
+.payment-row:hover {
+  background: #f3f5fb;
+}
+</style>
